@@ -1,0 +1,50 @@
+body {
+	font-family: "Frutiger", "Verdana", "Helvetica", sans-serif; /* typo utilisée pour toute la page */
+	width: 770px; /*largeur de la page*/
+	margin: 80px auto 0px auto; /*marge de la page */
+}
+
+h1 {
+	color: #f69822; /*couleur du titre*/
+}
+
+img {
+	width:118Px; /*largeur de l'image*/
+	float:right; /* postion à droite laissant la place au texte à gauche */
+}
+
+.identite {
+	font-size: 20px; /*taille du texte pour les coordonnées*/
+}
+
+
+h2 {
+	color: #f69822; /*couleur du titre*/
+	border-bottom: 4px solid #f69822; /*barre de séparation titre contenu, taille, type, couleur*/
+	
+} 
+
+h3 {
+	font-weight: normal; /*graisse de la typo*/
+}
+
+ul {
+	color:#f69822; /*couleur des puces et des titres*/
+	margin-left: -25px; /*réduction de la marge pour aligner les puces et les titres*/
+}
+
+p {
+	color: black; /*couleur typo texte de base*/
+	margin-top: -10px; /* changement de l'inter-ligne entre texte et titre*/
+}
+
+@media handheld {
+	body {
+	font-family: "Frutiger", "Verdana", "Helvetica", sans-serif; /* typo utilisée pour toute la page */
+	width: 480px; /*largeur de la page*/
+	margin: 40px auto 0px auto; /*marge de la page */
+}
+
+
+}
+
