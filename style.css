@@ -29,7 +29,7 @@ ul {
 }
 
 p {
-	color: red; /*couleur typo texte de base*/
+	color: black; /*couleur typo texte de base*/
 	margin-top: -10px; /* changement de l'inter-ligne entre texte et titre*/
 }
 
