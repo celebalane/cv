@@ -8,11 +8,6 @@ h1 {
 	color: #f69822; /*couleur du titre*/
 }
 
-img {
-	width:118Px; /*largeur de l'image*/
-	float:right; /* postion à droite laissant la place au texte à gauche */
-}
-
 .identite {
 	font-size: 20px; /*taille du texte pour les coordonnées*/
 }
