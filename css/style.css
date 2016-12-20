@@ -1,4 +1,3 @@
-@media (min-width: 750px) {
 body {
 	font-family: "Frutiger", "Verdana", "Helvetica", sans-serif; /* typo utilisée pour toute la page */
 	width: 70%;
@@ -36,5 +35,5 @@ p {
 	color: black; /*couleur typo texte de base*/
 	margin-top: -10px; /* changement de l'inter-ligne entre texte et titre*/
 }
-}
+
 
