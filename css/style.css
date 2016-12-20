@@ -1,14 +1,18 @@
+@media (min-width: 750px) {
 body {
 	font-family: "Frutiger", "Verdana", "Helvetica", sans-serif; /* typo utilisée pour toute la page */
-	width: 770px; /*largeur de la page*/
+	width: 70%;
 	margin: 80px auto 0px auto; /*marge de la page */
+	
 }
 
 h1 {
+
 	color: #f69822; /*couleur du titre*/
 }
 
 .identite {
+	
 	font-size: 20px; /*taille du texte pour les coordonnées*/
 }
 
@@ -32,14 +36,5 @@ p {
 	color: black; /*couleur typo texte de base*/
 	margin-top: -10px; /* changement de l'inter-ligne entre texte et titre*/
 }
-
-@media handheld {
-	body {
-	font-family: "Frutiger", "Verdana", "Helvetica", sans-serif; /* typo utilisée pour toute la page */
-	width: 480px; /*largeur de la page*/
-	margin: 40px auto 0px auto; /*marge de la page */
-}
-
-
 }
 
