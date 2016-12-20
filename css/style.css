@@ -1,7 +1,7 @@
 body {
 	font-family: "Frutiger", "Verdana", "Helvetica", sans-serif; /* typo utilisée pour toute la page */
-	width: 70%;
-	margin: 80px auto 0px auto; /*marge de la page */
+	width: 70%; /*Taille que prend le body dans la page*/
+	margin: 70px auto 0px auto; /*marges de la page */
 	
 }
 
@@ -10,7 +10,7 @@ h1 {
 	color: #f69822; /*couleur du titre*/
 }
 
-.identite {
+#identite {
 	
 	font-size: 20px; /*taille du texte pour les coordonnées*/
 }
