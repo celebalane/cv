@@ -1,39 +1,141 @@
 body {
-	font-family: "Frutiger", "Verdana", "Helvetica", sans-serif; /* typo utilisée pour toute la page */
-	width: 70%; /*Taille que prend le body dans la page*/
-	margin: 70px auto 0px auto; /*marges de la page */
-	
+	margin:0px;
+	padding: 0px;
+	background-color: #fbf6df;
+	font-family: "Mosk", "Helvetica Nueu", sans-serif;
+	color: #fbf6df;
+}
+/*///////////////////////////////////Header/////////////////////////////////*/
+
+header {
+	margin-top: -25px;
+	margin-right: -14px;
+	margin-left: -14px;
+	background-image: url("image/header.svg");
+	background-repeat: no-repeat;
+	height: 170px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
 }
 
 h1 {
-
-	color: #f69822; /*couleur du titre*/
+	font-size: 5vw;
 }
-
-#identite {
-	
-	font-size: 20px; /*taille du texte pour les coordonnées*/
-}
-
-
+/*/////////////////////////////////Hexagone 1///////////////////////////////*/
 h2 {
-	color: #f69822; /*couleur du titre*/
-	border-bottom: 4px solid #f69822; /*barre de séparation titre contenu, taille, type, couleur*/
-	
-} 
-
-h3 {
-	font-weight: normal; /*graisse de la typo*/
+	font-size: 2vw;
 }
 
-ul {
-	color:#f69822; /*couleur des puces et des titres*/
-	margin-left: -25px; /*réduction de la marge pour aligner les puces et les titres*/
-}
-
-p {
-	color: black; /*couleur typo texte de base*/
-	margin-top: -10px; /* changement de l'inter-ligne entre texte et titre*/
+#formation {
+	position:relative;
+	width: 20%;
+	margin-top: 13%;
+	margin-left: 10.5%;
 }
 
 
+#hexa1 {
+	width: 100%;
+	z-index: auto;
+}
+
+#formation h2{
+	margin-top: -55%;
+	margin-left: 25%;
+	z-index: auto;
+}
+
+#formation:active {
+	animation-name: formation;
+	animation-fill-mode: forwards;
+	animation-duration: 3s;
+}
+
+#formation:active h2 {
+	display: none;
+}
+
+@keyframes formation {
+	100% {  
+		transform-origin: -35% 90%;
+		transform: scale(2.5);
+	}
+}
+
+/*/////////////////////////////////Hexagone 2///////////////////////////////*/
+
+#experiences {
+	width: 20%;
+	margin-top: -20%;
+	margin-left: 26%;
+}
+
+#hexa2 {
+	width: 100%;
+	z-index: auto;
+}
+
+#experiences h2{
+	margin-top: -60%;
+	margin-left: 4%;
+	z-index: auto;
+	text-align: center;
+}
+/*/////////////////////////////////Hexagone 3///////////////////////////////*/
+
+#competences {
+	width: 20%;
+	margin-top: -3.5%;
+	margin-left: 41.75%;
+}
+
+#hexa3 {
+	width: 100%;
+	z-index: auto;
+}
+
+#competences h2 {
+	margin-top: -55%;
+	margin-left: 20%;
+	z-index: auto;
+}
+
+/*/////////////////////////////////Hexagone 4///////////////////////////////*/
+
+#realisation {
+	width: 20%;
+	margin-top: -19.5%;
+	margin-left: 57.5%;
+}
+
+#hexa4 {
+	width: 100%;
+	z-index: auto;
+}
+
+#realisation h2 {
+	margin-top: -55%;
+	margin-left: 24%;
+	z-index: auto;
+}
+
+/*/////////////////////////////////Hexagone 5///////////////////////////////*/
+
+#contact {
+	width: 20%;
+	margin-top: -1.75%;
+	margin-left: 73%;
+}
+
+#hexa5 {
+	width: 100%;
+	z-index: 1;
+}
+
+#contact h2 {
+	margin-top: -54%;
+	margin-left: 30%;
+	z-index: 2;
+}
