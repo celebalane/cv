@@ -104,6 +104,13 @@ h1 {
   width: 1%;
 }
 
+.icone2 {
+  width: 10%;
+}
+
+#iconeForm {
+  transform: rotate(90deg);
+}
 h2 {
   font-size: 2em;
   margin-bottom: -0.5%;
