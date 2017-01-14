@@ -62,3 +62,46 @@ header img {
 	margin-left: -55%;
 }
 
+/*/////////////////////////////////Responsive mobile///////////////////////////////*/
+
+@media screen and (max-width: 480px) {
+	header {
+		margin-top: 0px;
+		height: 100px;
+	}
+
+	#boutons{
+		flex-direction: column;
+	}
+
+	#hexa1 {
+	width: 39%;
+	margin-top: -5%;
+	margin-left: 16%;
+	}
+
+	#hexa2 {
+	width: 39%;
+	margin-top: -11%;
+	margin-left: 43%;
+	}
+
+	#hexa3 {
+		width: 39%;
+		margin-top: -11%;
+		margin-left: 16%
+	}
+
+	#hexa4 {
+	width: 39%;
+	margin-top: -11%;
+	margin-left: 43%;
+	}
+
+	#hexa5 {
+		width: 39%;
+		margin-top: -11%;
+		margin-left: 16%
+	}
+
+}
