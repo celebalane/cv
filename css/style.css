@@ -26,40 +26,127 @@ header img {
 
 #hexa1 {
 	width: 90%;
-	margin-top: 70%;
+	margin-top: 63%;
 	margin-left: 65%;
+}
+
+/*//////////Animation///////////////////*/
+
+#formation {
+	animation-name: formationAnim;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes formationAnim {
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
 }
 
 /*/////////////////////////////////Hexagone 2///////////////////////////////*/
 
 #hexa2 {
 	width: 90%;
-	margin-top: 31%;
+	margin-top: 24%;
 	margin-left: 35%;
+}
+
+/*//////////Animation///////////////////*/
+
+#experiences {
+	animation-name: expAnim ;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes expAnim {
+	50% {
+		transform: scale(1.05);
+		z-index: 2;
+	}
+	100% {
+		transform: scale(1);
+	}
 }
 
 /*/////////////////////////////////Hexagone 3///////////////////////////////*/
 
 #hexa3 {
 	width: 90%;
-	margin-top: 70%;
+	margin-top: 63%;
 	margin-left: 5%;
+}
+
+/*//////////Animation///////////////////*/
+
+#competences {
+	animation-name: competAnim ;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes competAnim {
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
 }
 
 /*/////////////////////////////////Hexagone 4///////////////////////////////*/
 
 #hexa4 {
 	width: 90%;
-	margin-top: 31%;
+	margin-top: 24%;
 	margin-left: -25%;
+}
+
+/*//////////Animation///////////////////*/
+
+#realisation {
+	animation-name: realAnim;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes realAnim {
+	50% {
+		transform: scale(1.05);
+		z-index: 2;
+	}
+	100% {
+		transform: scale(1);
+	}
 }
 
 /*/////////////////////////////////Hexagone 5///////////////////////////////*/
 
 #hexa5 {
 	width: 90%;
-	margin-top: 70%;
+	margin-top: 63%;
 	margin-left: -55%;
+}
+
+/*//////////Animation///////////////////*/
+
+#contact {
+	animation-name: contactAnim ;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes contactAnim {
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
 }
 
 /*/////////////////////////////////Responsive mobile///////////////////////////////*/
