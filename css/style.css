@@ -105,3 +105,43 @@ header img {
 	}
 
 }
+
+/*/////////////////////////////////Responsive Grand Ecran///////////////////////////////*/
+
+@media screen and (min-width: 2560px) {
+	header {
+		margin-top: 0px;
+		height: 100px;
+	}
+
+	#hexa1 {
+	width: 100%;
+	margin-top: 150%;
+	margin-left: 40%;
+	}
+
+	#hexa2 {
+	width: 100%;
+	margin-top: 105%;
+	margin-left: 19%;
+	}
+
+	#hexa3 {
+		width: 100%;
+		margin-top: 150%;
+		margin-left: -2%
+	}
+
+	#hexa4 {
+	width: 100%;
+	margin-top: 105%;
+	margin-left: -23%;
+	}
+
+	#hexa5 {
+		width: 100%;
+		margin-top: 150%;
+		margin-left: -44%
+	}
+
+}
