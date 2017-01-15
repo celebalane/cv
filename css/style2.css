@@ -151,11 +151,12 @@ h2 {
   font-size: 1.4em;
   margin-bottom: -0.5%;
   word-wrap: break-word;
-  width: 50%;
+  width: 70%;
 }
 
 p {
   font-size: 1.2em;
   word-wrap: break-word;
+  width: 70%;
 }
 }
