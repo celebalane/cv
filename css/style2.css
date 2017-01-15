@@ -138,7 +138,7 @@ p {
 @media screen and (max-width: 480px) {
 
 .contenu {
-  min-height: 150%;
+  min-height: 90%;
 }
 
 h1 {
