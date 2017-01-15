@@ -193,6 +193,18 @@ header img {
 
 }
 
+@media screen and (max-width: 768px) and (orientation:portrait) {
+	header {
+		margin-top: 0px;
+		height: 100px;
+	}
+
+	#boutons{
+		flex-direction: column;
+	}
+
+
+
 /*/////////////////////////////////Responsive Grand Ecran///////////////////////////////*/
 
 @media screen and (min-width: 2560px) {
