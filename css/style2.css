@@ -136,10 +136,6 @@ p {
 /*///////////////////////////Responsive mobile////////////////////////////////////*/
 
 @media screen and (max-width: 480px) {
- 
- .contenu {
-    min-width: 50%;
- }
 
  h1 {
   font-size: 3em;
@@ -155,6 +151,7 @@ h2 {
   font-size: 1.4em;
   margin-bottom: -0.5%;
   word-wrap: break-word;
+  width: 50%;
 }
 
 p {
