@@ -130,6 +130,14 @@ p {
   width: 80%;
 }
 
+
+#wip {
+  margin-left: 20%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  
+}
+
 /*///////////////////////////Responsive mobile////////////////////////////////////*/
 
 @media screen and (max-width: 480px) {
@@ -154,4 +162,18 @@ p {
   font-size: 1.2em;
   width: 80%;
 }
+
+#wip {
+  width: 70%;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 150%;
+  
 }
+}
+
+@media screen and (min-width: 1440px) {
+
+  #formation {
+    margin-bottom: 30%;
+  }
