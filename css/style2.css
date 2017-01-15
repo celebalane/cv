@@ -10,7 +10,7 @@
 body { 
   height: 100%; 
   width: 100%;
-
+  font-family: 'mosk_normal_400regular', sans-serif;
   margin:0;
   padding:0;
   overflow-x: hidden; 
