@@ -137,7 +137,11 @@ p {
 
 @media screen and (max-width: 480px) {
 
- h1 {
+.contenu {
+  min-height: 150%;
+}
+
+h1 {
   font-size: 3em;
   margin: -5% auto 1%;
   color: #2ba0a0; 
