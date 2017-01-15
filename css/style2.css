@@ -137,10 +137,6 @@ p {
 
 @media screen and (max-width: 480px) {
 
-body {
-  height: 90%;
-}
-
 h1 {
   font-size: 3em;
   margin: -5% auto 1%;
