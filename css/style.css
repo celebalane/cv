@@ -193,7 +193,7 @@ header img {
 
 }
 
-@media screen and (orientation:portrait) {
+@media screen and (min-width: 768px) and (orientation:portrait) {
 	header {
 		margin-top: 0px;
 		height: 100px;
