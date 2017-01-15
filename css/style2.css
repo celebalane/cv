@@ -136,6 +136,11 @@ p {
 /*///////////////////////////Responsive mobile////////////////////////////////////*/
 
 @media screen and (max-width: 480px) {
+ 
+ .contenu {
+    min-width: 80%;
+ }
+
  h1 {
   font-size: 3em;
   margin: -2% auto 1%;
