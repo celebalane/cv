@@ -172,8 +172,14 @@ p {
 }
 }
 
+/*///////////////////////////Responsive grand écran////////////////////////////////////*/
+
 @media screen and (min-width: 1440px) {
 
   #formation {
+    margin-bottom: 30%;
+  }
+
+  #wip {
     margin-bottom: 30%;
   }
