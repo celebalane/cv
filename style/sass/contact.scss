@@ -1,9 +1,9 @@
-@import '_body';
 @import '_typo';
+@import '_body';
 @import '_menu';
-@import '_wip';
 
 $font_default:'mosk_normal_400regular', sans-serif;
+$color_default_contact: #2ba0a0;
 
 /*///////////////////////////Formulaire////////////////////////////////////*/
 
@@ -11,8 +11,12 @@ body{
 	overflow:hidden;
 }
 
+#titreContact{
+	margin-bottom:-1.5%;
+}
+
 .contact{
-	background-color: #2ba0a0;
+	background-color: $color_default_contact;
 	width:55%;
 	padding:3%;	
 	display:flex;
@@ -23,6 +27,26 @@ body{
 	h2{
 		margin-bottom: 6%;
 	}
+}
+
+.alert{
+	width:59.5%;
+	padding: 10px;
+	margin-top:-10px;
+  	margin-bottom: 10px;
+  	border: 1px solid transparent;
+}
+
+.alert-success {
+  color: $color_default_contact;
+  background-color: #cffcfc;
+  border-color: $color_default_contact;
+}
+
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
 }
 
 #formulaire{
@@ -59,7 +83,7 @@ textarea{
 }
 
 .bouton-droit{
-	margin-left:80%;
+	margin-left:82%;
 	margin-top:-5%;
 }
 
@@ -70,13 +94,21 @@ textarea{
 	padding:13%;
 	font-family:$font_default;
 	font-size:1.1em;
+	cursor:  pointer;
 }
 
 .bande-icone{
 	margin-left:10%;
 }
 
-.icone-reseaux{
+.icone-reseaux{  
 	width:15%;
 	margin-right:3%;
+	&:hover{
+	animation-name: rotation;
+	animation-duration:3s;
+	animation-iteration-count: infinite;
+	}
 }
+
+@import '_animrotation';

@@ -26,8 +26,8 @@
 	<label for="nav-trigger"></label>
 
 	<section class="contenu">
-     	<h1>Contact</h1>
-        <p>Pour me contacter par mail, veuillez utiliser le formulaire suivant :</p>
+     	<h1 id="titreContact">Contact</h1>
+        <p>Vous pouvez me retrouver sur les réseaux sociaux indiqués.<br> Pour me contacter par mail, veuillez utiliser le formulaire suivant :</p>
         <!--Section contenant les messages pour l'envoi de mail-->
 		<article>
        		<?php if(array_key_exists('errors',$_SESSION)): ?>

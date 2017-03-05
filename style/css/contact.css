@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'mosk_normal_400regular';
+  src: url("../mosk_normal_400-webfont.eot");
+  src: url("../mosk_normal_400-webfont.eot?#iefix") format("embedded-opentype"), url("../mosk_normal_400-webfont.woff2") format("woff2"), url("../mosk_normal_400-webfont.woff") format("woff"), url("../mosk_normal_400-webfont.ttf") format("truetype"), url("../mosk_normal_400-webfont.svg#mosk_normal_400regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 body {
   height: 100%;
   width: 100%;
@@ -45,12 +51,6 @@ p {
   p {
     font-size: 1.2em;
     width: 80%; } }
-@font-face {
-  font-family: 'mosk_normal_400regular';
-  src: url("../mosk_normal_400-webfont.eot");
-  src: url("../mosk_normal_400-webfont.eot?#iefix") format("embedded-opentype"), url("../mosk_normal_400-webfont.woff2") format("woff2"), url("../mosk_normal_400-webfont.woff") format("woff"), url("../mosk_normal_400-webfont.ttf") format("truetype"), url("../mosk_normal_400-webfont.svg#mosk_normal_400regular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
 /*///////////////////////////Menu////////////////////////////////////*/
 nav .navigation {
   width: 100%;
@@ -120,20 +120,12 @@ label[for="nav-trigger"] {
 .nav-trigger:checked ~ .contenu {
   left: 200px; }
 
-#wip {
-  margin-left: 20%;
-  margin-top: 5%;
-  margin-bottom: 5%; }
-
-@media screen and (max-width: 480px) {
-  #wip {
-    width: 70%;
-    margin-left: 5%;
-    margin-top: 5%;
-    margin-bottom: 150%; } }
 /*///////////////////////////Formulaire////////////////////////////////////*/
 body {
   overflow: hidden; }
+
+#titreContact {
+  margin-bottom: -1.5%; }
 
 .contact {
   background-color: #2ba0a0;
@@ -145,6 +137,23 @@ body {
   margin-top: 8.8%; }
   .reseaux h2 {
     margin-bottom: 6%; }
+
+.alert {
+  width: 59.5%;
+  padding: 10px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  border: 1px solid transparent; }
+
+.alert-success {
+  color: #2ba0a0;
+  background-color: #cffcfc;
+  border-color: #2ba0a0; }
+
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1; }
 
 #formulaire {
   width: 50%;
@@ -175,7 +184,7 @@ textarea {
   padding: 3%; }
 
 .bouton-droit {
-  margin-left: 80%;
+  margin-left: 82%;
   margin-top: -5%; }
 
 #boutonEnvoi {
@@ -184,7 +193,8 @@ textarea {
   border: none;
   padding: 13%;
   font-family: "mosk_normal_400regular", sans-serif;
-  font-size: 1.1em; }
+  font-size: 1.1em;
+  cursor: pointer; }
 
 .bande-icone {
   margin-left: 10%; }
@@ -192,3 +202,19 @@ textarea {
 .icone-reseaux {
   width: 15%;
   margin-right: 3%; }
+  .icone-reseaux:hover {
+    animation-name: rotation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; }
+
+@keyframes rotation {
+  0% {
+    transform: rotate(-45deg); }
+  25% {
+    transform: rotate(45deg); }
+  50% {
+    transform: rotate(-45deg); }
+  75% {
+    transform: rotate(45deg); }
+  100% {
+    transform: rotate(-45deg); } }
