@@ -1,10 +1,10 @@
-body {
-	margin:0px;
-	padding: 0px;
-	background-color: #fbf6df;
-	font-family: "Mosk", "Helvetica Nueu", sans-serif;
-	color: #fbf6df;
-}
+$duration_default: 3s;
+$iteration:infinite;
+$scale_half:1.05;
+$scale_complete:1;
+
+@import '_body.scss';
+
 /*///////////////////////////////////Header/////////////////////////////////*/
 
 header {
@@ -22,130 +22,126 @@ header img {
 	display: flex;
 }
 
+@mixin hexagone($top,$left){
+	width:90%;
+	margin-top:$top;
+	margin-left:$left;
+}
+
 /*/////////////////////////////////Hexagone 1///////////////////////////////*/
 
 #hexa1 {
-	width: 90%;
-	margin-top: 63%;
-	margin-left: 65%;
+	@include hexagone(63%,65%);
 }
 
 /*//////////Animation///////////////////*/
 
 #formation img:hover{
 	animation-name: formationAnim;
-	animation-duration: 3s;
-	animation-iteration-count: infinite;
+	animation-duration: $duration_default;
+	animation-iteration-count: $iteration;
 }
 
 @keyframes formationAnim {
 	50% {
-		transform: scale(1.05);
+		transform: scale($scale_half);
 	}
 	100% {
-		transform: scale(1);
+		transform: scale($scale_complete);
 	}
 }
 
 /*/////////////////////////////////Hexagone 2///////////////////////////////*/
 
 #hexa2 {
-	width: 90%;
-	margin-top: 24%;
-	margin-left: 35%;
+	@include hexagone(24%,35%);
 }
 
 /*//////////Animation///////////////////*/
 
 #experiences img:hover{
 	animation-name: expAnim ;
-	animation-duration: 3s;
-	animation-iteration-count: infinite;
+	animation-duration: $duration_default;
+	animation-iteration-count: $iteration;
 }
 
 @keyframes expAnim {
 	50% {
-		transform: scale(1.05);
+		transform: scale($scale_half);
 		z-index: 2;
 	}
 	100% {
-		transform: scale(1);
+		transform: scale($scale_complete);
 	}
 }
 
 /*/////////////////////////////////Hexagone 3///////////////////////////////*/
 
 #hexa3 {
-	width: 90%;
-	margin-top: 63%;
-	margin-left: 5%;
+	@include hexagone(63%,5%);
 }
 
 /*//////////Animation///////////////////*/
 
 #competences img:hover {
 	animation-name: competAnim ;
-	animation-duration: 3s;
-	animation-iteration-count: infinite;
+	animation-duration: $duration_default;
+	animation-iteration-count: $iteration;
 }
 
 @keyframes competAnim {
 	50% {
-		transform: scale(1.05);
+		transform: scale($scale_half);
 	}
 	100% {
-		transform: scale(1);
+		transform: scale($scale_complete);
 	}
 }
 
 /*/////////////////////////////////Hexagone 4///////////////////////////////*/
 
 #hexa4 {
-	width: 90%;
-	margin-top: 24%;
-	margin-left: -25%;
+	@include hexagone(24%,-25%);
 }
 
 /*//////////Animation///////////////////*/
 
 #realisation img:hover {
 	animation-name: realAnim;
-	animation-duration: 3s;
-	animation-iteration-count: infinite;
+	animation-duration: $duration_default;
+	animation-iteration-count: $iteration;
 }
 
 @keyframes realAnim {
 	50% {
-		transform: scale(1.05);
+		transform: scale($scale_half);
 		z-index: 2;
 	}
 	100% {
-		transform: scale(1);
+		transform: scale($scale_complete);
 	}
 }
 
 /*/////////////////////////////////Hexagone 5///////////////////////////////*/
 
 #hexa5 {
-	width: 90%;
-	margin-top: 63%;
-	margin-left: -55%;
+	@include hexagone(63%,-55%);
 }
 
 /*//////////Animation///////////////////*/
 
 #contact img:hover{
 	animation-name: contactAnim ;
-	animation-duration: 3s;
-	animation-iteration-count: infinite;
+	animation-duration: $duration_default;
+	animation-iteration-count: $iteration;
 }
 
 @keyframes contactAnim {
 	50% {
-		transform: scale(1.05);
+		transform: scale($scale_half);
 	}
 	100% {
-		transform: scale(1);
+		transform: scale($scale_complete);
 	}
 }
 
@@ -161,73 +157,30 @@ header img {
 		flex-direction: column;
 	}
 
-	#hexa1 {
-	width: 39%;
-	margin-top: -5%;
-	margin-left: 16%;
-	}
-
-	#hexa2 {
-	width: 39%;
-	margin-top: -11%;
-	margin-left: 43%;
-	}
-
-	#hexa3 {
-		width: 39%;
-		margin-top: -11%;
-		margin-left: 16%
-	}
-
-	#hexa4 {
-	width: 39%;
-	margin-top: -11%;
-	margin-left: 43%;
-	}
-
-	#hexa5 {
-		width: 39%;
-		margin-top: -11%;
-		margin-left: 16%
-	}
-}
-
-/*/////////////////////////////////Responsive Grand Ecran///////////////////////////////*/
-
-@media screen and (min-width: 2560px) {
-	header {
-		margin-top: 0px;
-		height: 100px;
+	@mixin hexagone($top,$left){
+		width:39%;
+		margin-top:$top;
+		margin-left:$left;
 	}
 
 	#hexa1 {
-	width: 100%;
-	margin-top: 150%;
-	margin-left: 40%;
+		@include hexagone(-5%,16%);
 	}
 
 	#hexa2 {
-	width: 100%;
-	margin-top: 105%;
-	margin-left: 19%;
+		@include hexagone(-11%,43%);
 	}
 
 	#hexa3 {
-		width: 100%;
-		margin-top: 150%;
-		margin-left: -2%
+		@include hexagone(-11%,16%);
 	}
 
 	#hexa4 {
-	width: 100%;
-	margin-top: 105%;
-	margin-left: -23%;
+		@include hexagone(-11%,43%);
 	}
 
 	#hexa5 {
-		width: 100%;
-		margin-top: 150%;
-		margin-left: -44%
+		@include hexagone(-11%,16%);
 	}
-
 }
+

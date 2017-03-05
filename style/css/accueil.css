@@ -1,0 +1,179 @@
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'mosk_normal_400regular', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: #505659; }
+
+/*///////////////////////////Contenu////////////////////////////////////*/
+h1 {
+  font-size: 4em;
+  margin: -2% auto 1%;
+  color: #2ba0a0; }
+
+.icone {
+  width: 1%; }
+
+.icone2 {
+  width: 10%; }
+
+h2 {
+  font-size: 2em;
+  margin-bottom: -0.5%; }
+
+p {
+  font-size: 1.2em;
+  width: 80%; }
+
+/*///////////////////////////Responsive mobile////////////////////////////////////*/
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 2.5em;
+    margin: -5% auto 1%;
+    color: #2ba0a0; }
+
+  .icone {
+    width: 4%; }
+
+  h2 {
+    font-size: 1.4em;
+    margin-bottom: -0.5%;
+    width: 80%; }
+
+  p {
+    font-size: 1.2em;
+    width: 80%; } }
+/*///////////////////////////////////Header/////////////////////////////////*/
+header {
+  margin-top: -35px;
+  height: 220px; }
+
+header img {
+  width: 100%; }
+
+/*/////////////////////////////////Boutons///////////////////////////////*/
+#boutons {
+  display: flex; }
+
+/*/////////////////////////////////Hexagone 1///////////////////////////////*/
+#hexa1 {
+  width: 90%;
+  margin-top: 63%;
+  margin-left: 65%; }
+
+/*//////////Animation///////////////////*/
+#formation img:hover {
+  animation-name: formationAnim;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; }
+
+@keyframes formationAnim {
+  50% {
+    transform: scale(1.05); }
+  100% {
+    transform: scale(1); } }
+/*/////////////////////////////////Hexagone 2///////////////////////////////*/
+#hexa2 {
+  width: 90%;
+  margin-top: 24%;
+  margin-left: 35%; }
+
+/*//////////Animation///////////////////*/
+#experiences img:hover {
+  animation-name: expAnim;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; }
+
+@keyframes expAnim {
+  50% {
+    transform: scale(1.05);
+    z-index: 2; }
+  100% {
+    transform: scale(1); } }
+/*/////////////////////////////////Hexagone 3///////////////////////////////*/
+#hexa3 {
+  width: 90%;
+  margin-top: 63%;
+  margin-left: 5%; }
+
+/*//////////Animation///////////////////*/
+#competences img:hover {
+  animation-name: competAnim;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; }
+
+@keyframes competAnim {
+  50% {
+    transform: scale(1.05); }
+  100% {
+    transform: scale(1); } }
+/*/////////////////////////////////Hexagone 4///////////////////////////////*/
+#hexa4 {
+  width: 90%;
+  margin-top: 24%;
+  margin-left: -25%; }
+
+/*//////////Animation///////////////////*/
+#realisation img:hover {
+  animation-name: realAnim;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; }
+
+@keyframes realAnim {
+  50% {
+    transform: scale(1.05);
+    z-index: 2; }
+  100% {
+    transform: scale(1); } }
+/*/////////////////////////////////Hexagone 5///////////////////////////////*/
+#hexa5 {
+  width: 90%;
+  margin-top: 63%;
+  margin-left: -55%; }
+
+/*//////////Animation///////////////////*/
+#contact img:hover {
+  animation-name: contactAnim;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; }
+
+@keyframes contactAnim {
+  50% {
+    transform: scale(1.05); }
+  100% {
+    transform: scale(1); } }
+/*/////////////////////////////////Responsive mobile///////////////////////////////*/
+@media screen and (max-width: 480px) {
+  header {
+    margin-top: 0px;
+    height: 100px; }
+
+  #boutons {
+    flex-direction: column; }
+
+  #hexa1 {
+    width: 39%;
+    margin-top: -5%;
+    margin-left: 16%; }
+
+  #hexa2 {
+    width: 39%;
+    margin-top: -11%;
+    margin-left: 43%; }
+
+  #hexa3 {
+    width: 39%;
+    margin-top: -11%;
+    margin-left: 16%; }
+
+  #hexa4 {
+    width: 39%;
+    margin-top: -11%;
+    margin-left: 43%; }
+
+  #hexa5 {
+    width: 39%;
+    margin-top: -11%;
+    margin-left: 16%; } }

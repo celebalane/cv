@@ -1,0 +1,82 @@
+@import '_body';
+@import '_typo';
+@import '_menu';
+@import '_wip';
+
+$font_default:'mosk_normal_400regular', sans-serif;
+
+/*///////////////////////////Formulaire////////////////////////////////////*/
+
+body{
+	overflow:hidden;
+}
+
+.contact{
+	background-color: #2ba0a0;
+	width:55%;
+	padding:3%;	
+	display:flex;
+}
+
+.reseaux{
+	margin-top:8.8%;
+	h2{
+		margin-bottom: 6%;
+	}
+}
+
+#formulaire{
+	width:50%;
+	padding:1% 3% 3% 3%;	
+}
+
+.champ{
+	display:flex;
+	margin-bottom:5%;
+}
+
+.label{
+	width:15%;
+	font-size:1.4em;
+	margin-left:-12%;
+	margin-right:15%;
+	display:flex;
+	text-align:right;
+}
+
+input{
+	width:175%;
+	height:100%;
+	padding-left:5%;
+	font-family:$font_default;
+	font-size:1.1em;
+}
+
+textarea{
+	font-family:$font_default;
+	font-size:1em;
+	padding:3%;
+}
+
+.bouton-droit{
+	margin-left:80%;
+	margin-top:-5%;
+}
+
+#boutonEnvoi{
+	color:white;
+	background-color:#4e595c;
+	border:none;
+	padding:13%;
+	font-family:$font_default;
+	font-size:1.1em;
+}
+
+.bande-icone{
+	margin-left:10%;
+}
+
+.icone-reseaux{
+	width:15%;
+	margin-right:3%;
+}
