@@ -2,18 +2,26 @@ $duration_default: 3s;
 $iteration:infinite;
 $scale_half:1.05;
 $scale_complete:1;
+$font_default:'mosk_normal_400regular', sans-serif;
 
 @import '_body.scss';
+@import '_typo';
 
 /*///////////////////////////////////Header/////////////////////////////////*/
 
 header {
-	margin-top: -35px;
-	height: 220px;
+	font-family:$font_default;
+	font-size:1.3em;
+	margin-top:5%;
+	margin-bottom:2%;
+	text-align:center;
 }
 
-header img {
-	width: 100%;
+#separation{
+	border-bottom: 10px solid #505659;
+	width:20%;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 /*/////////////////////////////////Boutons///////////////////////////////*/
@@ -148,9 +156,14 @@ header img {
 /*/////////////////////////////////Responsive mobile///////////////////////////////*/
 
 @media screen and (max-width: 480px) {
-	header {
-		margin-top: 0px;
-		height: 100px;
+
+	header{
+		margin-top: 10%;
+		margin-bottom: 15%;
+	}
+	#separation{
+		width:40%;
+		border-bottom:5px solid #505659;
 	}
 
 	#boutons{

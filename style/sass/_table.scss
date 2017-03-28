@@ -1,0 +1,24 @@
+table{
+	margin-top:4%;
+	border:1px solid black;
+	h2{
+		color: #2ba0a0;
+		margin-bottom: 2%;
+	}
+	thead{
+		text-align: center;
+	}
+	td{
+		border:1px solid black;
+		width:400px;
+		img{
+			width:20%;
+		}
+	}
+	.td-center{
+		img{
+			margin-left: 40%;
+		}
+	}
+}
+

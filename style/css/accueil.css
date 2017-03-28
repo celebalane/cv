@@ -1,5 +1,4 @@
 body {
-  height: 100%;
   width: 100%;
   font-family: 'mosk_normal_400regular', sans-serif;
   margin: 0;
@@ -30,28 +29,39 @@ p {
 /*///////////////////////////Responsive mobile////////////////////////////////////*/
 @media screen and (max-width: 480px) {
   h1 {
-    font-size: 2.5em;
+    font-size: 2.2em;
     margin: -5% auto 1%;
     color: #2ba0a0; }
 
   .icone {
-    width: 4%; }
+    width: 6%; }
 
   h2 {
     font-size: 1.4em;
-    margin-bottom: -0.5%;
-    width: 80%; }
+    margin-bottom: -0.5%; }
 
   p {
     font-size: 1.2em;
-    width: 80%; } }
+    width: 100%; } }
+@font-face {
+  font-family: 'mosk_normal_400regular';
+  src: url("../mosk_normal_400-webfont.eot");
+  src: url("../mosk_normal_400-webfont.eot?#iefix") format("embedded-opentype"), url("../mosk_normal_400-webfont.woff2") format("woff2"), url("../mosk_normal_400-webfont.woff") format("woff"), url("../mosk_normal_400-webfont.ttf") format("truetype"), url("../mosk_normal_400-webfont.svg#mosk_normal_400regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 /*///////////////////////////////////Header/////////////////////////////////*/
 header {
-  margin-top: -35px;
-  height: 220px; }
+  font-family: "mosk_normal_400regular", sans-serif;
+  font-size: 1.3em;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  text-align: center; }
 
-header img {
-  width: 100%; }
+#separation {
+  border-bottom: 10px solid #505659;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto; }
 
 /*/////////////////////////////////Boutons///////////////////////////////*/
 #boutons {
@@ -147,8 +157,12 @@ header img {
 /*/////////////////////////////////Responsive mobile///////////////////////////////*/
 @media screen and (max-width: 480px) {
   header {
-    margin-top: 0px;
-    height: 100px; }
+    margin-top: 10%;
+    margin-bottom: 15%; }
+
+  #separation {
+    width: 40%;
+    border-bottom: 5px solid #505659; }
 
   #boutons {
     flex-direction: column; }

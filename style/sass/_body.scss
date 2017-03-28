@@ -1,5 +1,4 @@
-body { 
-  height: 100%; 
+body {  
   width: 100%;
   font-family:'mosk_normal_400regular', sans-serif;
   margin:0;
@@ -39,24 +38,24 @@ p {
 @media screen and (max-width: 480px) {
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2.2em;
   margin: -5% auto 1%;
   color: #2ba0a0; 
 }
 
 .icone {
-    width: 4%;
+    width: 6%;
 }
 
 h2 {
   font-size: 1.4em;
   margin-bottom: -0.5%;
-  width: 80%;
 }
 
 p {
   font-size: 1.2em;
-  width: 80%;
+  width:100%;
 }
 
 }
+

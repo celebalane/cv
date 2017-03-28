@@ -38,7 +38,6 @@ nav .navigation {
 
 .contenu {
   min-height: 100%;
-  min-width: 100%;
   background-color: #fbf6df; 
   position: relative;
   top: $postion_default;
@@ -80,4 +79,3 @@ label[for="nav-trigger"] {
 .nav-trigger:checked ~ .contenu {
   left: 200px;
 }
-
