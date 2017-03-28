@@ -32,14 +32,14 @@ if(!array_key_exists('message', $_POST) || $_POST['message'] == '') {
         $mail->isSMTP();                                      // Set mailer to use SMTP
         $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
         $mail->SMTPAuth = true;                               // Enable SMTP authentication
-        $mail->Username = 'pourquoipasnousface@gmail.com';                 // SMTP username
-        $mail->Password = 'lafabrik03';                           // SMTP password
+        $mail->Username = '';                 // SMTP username
+        $mail->Password = '';                           // SMTP password
         $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
         $mail->Port = 465;                                    // TCP port to connect to
         $mail->setLanguage('fr', '/optional/path/to/language/directory/');
 
-        $mail->setFrom($user_mail, 'Contact Face');
-        $mail->addAddress('pourquoipasnousface@gmail.com', $name.' '.$lastname);
+        $mail->setFrom($user_mail, '');
+        $mail->addAddress('', $name.' '.$lastname);
         $mail->addReplyTo($user_mail, $name.' '.$lastname);
         $mail->isHTML(true);                                  // Set email format to HTML
 
