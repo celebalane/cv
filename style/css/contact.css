@@ -5,7 +5,8 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  color: #505659; }
+  color: #505659;
+  background-color: #fcfce8; }
 
 /*///////////////////////////Contenu////////////////////////////////////*/
 h1 {
@@ -82,7 +83,7 @@ nav .navigation {
 
 .contenu {
   min-height: 100%;
-  background-color: #fbf6df;
+  background-color: #fcfce8;
   position: relative;
   top: 0;
   bottom: 100%;

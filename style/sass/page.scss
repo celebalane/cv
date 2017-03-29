@@ -5,13 +5,21 @@
 @import '_table';
 
 
+
+
 @media screen and (min-width: 480px) {
 	.hidden-md{
 		display:none;
+	}
+}
+@media screen and (min-width: 760px){
+	#formation{
+		margin-bottom:50%;
 	}
 }
 @media screen and (max-width: 480px) {
 	.hidden-xs{
 		display: none;
 	}
+
 }

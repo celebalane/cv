@@ -4,7 +4,8 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  color: #505659; }
+  color: #505659;
+  background-color: #fcfce8; }
 
 /*///////////////////////////Contenu////////////////////////////////////*/
 h1 {
@@ -81,7 +82,7 @@ nav .navigation {
 
 .contenu {
   min-height: 100%;
-  background-color: #fbf6df;
+  background-color: #fcfce8;
   position: relative;
   top: 0;
   bottom: 100%;
@@ -154,6 +155,9 @@ table {
 @media screen and (min-width: 480px) {
   .hidden-md {
     display: none; } }
+@media screen and (min-width: 760px) {
+  #formation {
+    margin-bottom: 50%; } }
 @media screen and (max-width: 480px) {
   .hidden-xs {
     display: none; } }
