@@ -1,16 +1,14 @@
 table{
+	width:100%;
 	margin-top:4%;
-	border:1px solid black;
 	h2{
 		color: #2ba0a0;
-		margin-bottom: 2%;
 	}
 	thead{
 		text-align: center;
 	}
 	td{
-		border:1px solid black;
-		width:400px;
+		width:20%;
 		img{
 			width:20%;
 		}
@@ -22,3 +20,25 @@ table{
 	}
 }
 
+@media screen and (max-width: 956px) {
+	table{
+		h2{
+			font-size: 1.6em;
+		}
+		td{
+			img{
+				width: 35%;
+			}
+		}
+		.correction_down{
+			img{
+				width: 27%;
+			}
+		}
+		.correction_up{
+			img{
+				width: 42%;
+			}
+		}
+	}
+}

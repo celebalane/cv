@@ -129,17 +129,31 @@ label[for="nav-trigger"] {
     margin-top: 5%;
     margin-bottom: 150%; } }
 table {
-  margin-top: 4%;
-  border: 1px solid black; }
+  width: 100%;
+  margin-top: 4%; }
   table h2 {
-    color: #2ba0a0;
-    margin-bottom: 2%; }
+    color: #2ba0a0; }
   table thead {
     text-align: center; }
   table td {
-    border: 1px solid black;
-    width: 400px; }
+    width: 20%; }
     table td img {
       width: 20%; }
   table .td-center img {
     margin-left: 40%; }
+
+@media screen and (max-width: 956px) {
+  table h2 {
+    font-size: 1.6em; }
+  table td img {
+    width: 35%; }
+  table .correction_down img {
+    width: 27%; }
+  table .correction_up img {
+    width: 42%; } }
+@media screen and (min-width: 480px) {
+  .hidden-md {
+    display: none; } }
+@media screen and (max-width: 480px) {
+  .hidden-xs {
+    display: none; } }
