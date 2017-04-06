@@ -1,12 +1,21 @@
 <?php
   session_start();
+  $firefox = strpos($_SERVER["HTTP_USER_AGENT"], 'Firefox') ? true : false;
+  $chrome = strpos($_SERVER["HTTP_USER_AGENT"], 'Chrome') ? true : false;
+ 
+  if ($chrome) {
+    $style='<link rel="stylesheet" type="text/css" href="style/css/contact.css">';
+  }
+  if ($firefox) {
+    $style = '<link rel="stylesheet" type="text/css" href="style/css/contactFirefox.css">';
+  }
  ?>
 
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Emilie Leterme - Contact</title>
-	<link rel="stylesheet" type="text/css" href="style/css/contact.css">
+	<?= $style ?>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -14,7 +23,7 @@
 	<!--Menu-->
 	<nav>
 		<ul class="navigation">
-    		<li class="nav-item"><a href="index.html"><img src="image/icone2.svg" alt="icone" class="icone2" /> Accueil</a></li>
+    		<li class="nav-item"><a href="index.php"><img src="image/icone2.svg" alt="icone" class="icone2" /> Accueil</a></li>
     		<li class="nav-item"><a href="formations.html"><img src="image/icone2.svg" alt="icone" class="icone2" /> Formation</a></li>
     		<li class="nav-item"><a href="experiences.html"><img src="image/icone2.svg" alt="icone" class="icone2" /> Expériences professionnelles</a></li>
     		<li class="nav-item"><a href="competences.html"><img src="image/icone2.svg" alt="icone" class="icone2" /> Compétences</a></li>

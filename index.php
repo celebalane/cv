@@ -1,10 +1,25 @@
+<?php
+
+$firefox = strpos($_SERVER["HTTP_USER_AGENT"], 'Firefox') ? true : false;
+$chrome = strpos($_SERVER["HTTP_USER_AGENT"], 'Chrome') ? true : false;
+ 
+if ($chrome) {
+	$style='<link rel="stylesheet" type="text/css" href="style/css/accueil.css">';
+}
+if ($firefox) {
+	$style = '<link rel="stylesheet" type="text/css" href="style/css/accueilFirefox.css">';
+}
+ 
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Emilie Leterme</title>
-	<link rel="stylesheet" type="text/css" href="style/css/accueil.css">
+	<?= $style ?>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 </head>
 <body>
 	<header>
@@ -13,7 +28,7 @@
 	</header>
 	<section id="boutons">
 		<article id="formation">
-			<a href="formation.html">
+			<a href="formations.html">
 				<img src="image/hexanoir_form.svg" alt="Formation" id="hexa1"/>
 			</a>
 		</article>

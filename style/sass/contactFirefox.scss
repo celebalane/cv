@@ -1,0 +1,182 @@
+@import '_body';
+@import '_typo';
+@import '_menu';
+
+$font_default:'mosk_normal_400regular', sans-serif;
+$color_default_contact: #2ba0a0;
+
+/*///////////////////////////Page contact////////////////////////////////////*/
+
+#titreContact{
+	margin-bottom:-1.5%;
+}
+
+.contact{
+	background-color: $color_default_contact;
+	width:57%;
+	padding:3%;	
+	display:flex;
+	margin-bottom:10%;          /*Pour que la barre de nav ne soit pas plus grande que le contenu*/
+}
+
+/*///////////Réseaux/////////////*/
+
+.reseaux{
+	margin-top:8.8%;
+	h2{
+		margin-bottom: 6%;
+	}
+}
+
+.bande-icone{
+	margin-left:10%;
+}
+
+.icone-reseaux{  
+	width:15%;
+	margin-right:3%;
+	&:hover{
+	animation-name: rotation;
+	animation-duration:3s;
+	animation-iteration-count: infinite;
+	}
+}
+/*///////////Message envoi formulaire/////////////*/
+.alert{
+	width:59.5%;
+	padding: 10px;
+	margin-top:-10px;
+  	margin-bottom: 10px;
+  	border: 1px solid transparent;
+}
+
+.alert-success {
+  color: $color_default_contact;
+  background-color: #cffcfc;
+  border-color: $color_default_contact;
+}
+
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+
+/*///////////Formulaire/////////////*/
+#formulaire{
+	width:50%;
+	padding:1% 3% 3% 3%;	
+}
+
+.champ{
+	display:flex;
+	margin-bottom:5%;
+}
+
+.label{
+	width:15%;
+	font-size:1.4em;
+	margin-left:-12%;
+	margin-right:15%;
+	display:flex;
+	text-align:right;
+}
+
+input{
+	width:120%;
+	height:100%;
+	padding-left:5%;
+	font-family:$font_default;
+	font-size:1.1em;
+}
+
+textarea{
+	font-family:$font_default;
+	font-size:1em;
+	padding:3%;
+}
+
+.bouton-droit{
+	margin-left:82%;
+	margin-top:-5%;
+}
+
+#boutonEnvoi{
+	margin-top:10%;
+	color:white;
+	background-color:#4e595c;
+	border:none;
+	padding:13%;
+	font-family:$font_default;
+	font-size:1.1em;
+	cursor:  pointer;
+}
+
+@import '_animrotation';
+
+/*///////////////////////////Mobile////////////////////////////////////*/
+@media screen and (max-width: 480px) {
+	
+	.contact{
+		padding-top:0%;
+		padding-bottom: 3px;
+		margin-left: -20%;
+		width: 135%;
+		flex-direction: column;
+	}
+
+	.reseaux h2{
+		text-align: center;
+		margin-top: -2%;
+	}
+
+	.bande-icone{
+		text-align: center;
+		margin-left: 0;
+	}
+
+	.icone-reseaux{
+		width: 20%;
+	}
+
+	.label{
+		display: block;
+		margin:4% 0%;
+	}
+	input{
+		padding:5%;
+	}
+	textarea{
+		width:180%;
+	}
+	.champ{
+		display: block;
+		margin-bottom: 0%;
+	}
+	
+	.bouton-droit{
+		margin-top: 2%;
+		margin-left: 55%;	
+	}
+	#boutonEnvoi{
+		margin-top: 0;
+		font-size: 1.5em;
+	}
+}
+
+//////////////////////////////Ordi//////////////////////////////
+@media screen and (min-width: 1024px){
+	.contact{
+		width:70%;
+	}
+}
+@media screen and (min-width: 1920px){
+	.contact{
+		width:60%;
+	}
+	.reseaux h2{
+		text-align: center;
+		margin-left: -34%;
+	}
+	
+}

@@ -101,9 +101,9 @@ header {
 
 /*/////////////////////////////////Hexagone 1///////////////////////////////*/
 #hexa1 {
-  width: 90%;
-  margin-top: 63%;
-  margin-left: 65%; }
+  margin-top: 43%;
+  margin-left: 48%;
+  width: 68%; }
 
 /*//////////Animation///////////////////*/
 #formation img:hover {
@@ -121,9 +121,9 @@ header {
     transform: scale(1); } }
 /*/////////////////////////////////Hexagone 2///////////////////////////////*/
 #hexa2 {
-  width: 90%;
-  margin-top: 24%;
-  margin-left: 35%; }
+  margin-top: 17%;
+  margin-left: 0%;
+  width: 100%; }
 
 /*//////////Animation///////////////////*/
 #experiences img:hover {
@@ -142,9 +142,9 @@ header {
     transform: scale(1); } }
 /*/////////////////////////////////Hexagone 3///////////////////////////////*/
 #hexa3 {
-  width: 90%;
-  margin-top: 63%;
-  margin-left: 5%; }
+  margin-top: 62%;
+  margin-left: -23%;
+  width: 100%; }
 
 /*//////////Animation///////////////////*/
 #competences img:hover {
@@ -159,9 +159,9 @@ header {
     transform: scale(1); } }
 /*/////////////////////////////////Hexagone 4///////////////////////////////*/
 #hexa4 {
-  width: 90%;
-  margin-top: 24%;
-  margin-left: -25%; }
+  margin-top: 18%;
+  margin-left: -46%;
+  width: 99%; }
 
 /*//////////Animation///////////////////*/
 #realisation img:hover {
@@ -177,9 +177,9 @@ header {
     transform: scale(1); } }
 /*/////////////////////////////////Hexagone 5///////////////////////////////*/
 #hexa5 {
-  width: 90%;
-  margin-top: 63%;
-  margin-left: -55%; }
+  margin-top: 62%;
+  margin-left: -70%;
+  width: 100%; }
 
 /*//////////Animation///////////////////*/
 #contact img:hover {
@@ -229,3 +229,43 @@ header {
     width: 39%;
     margin-top: -11%;
     margin-left: 16%; } }
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  #hexa1 {
+    margin-top: 63%;
+    margin-left: 26%;
+    width: 100%; }
+
+  #hexa2 {
+    margin-top: 17%;
+    margin-left: 5%;
+    width: 100%; }
+
+  #hexa3 {
+    margin-top: 62%;
+    margin-left: -16%;
+    width: 100%; }
+
+  #hexa4 {
+    margin-top: 18%;
+    margin-left: -36%;
+    width: 99%; }
+
+  #hexa5 {
+    margin-top: 62%;
+    margin-left: -56%;
+    width: 100%; } }
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  #hexa1 {
+    margin-top: 55%;
+    margin-left: 36%;
+    width: 85%; } }
+@media screen and (min-width: 1920px) {
+  #hexa1 {
+    margin-top: 28%;
+    margin-left: 63%;
+    width: 47%; } }
+@media screen and (min-width: 1680px) and (max-width: 1919px) {
+  #hexa1 {
+    margin-top: 32%;
+    margin-left: 59%;
+    width: 53%; } }

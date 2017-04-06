@@ -6,6 +6,13 @@ body {
   overflow-x: hidden; 
   color: #505659;
   background-color: #fcfce8;
+  -moz-width: 90%;
+  -moz-font-family:'mosk_normal_400regular', sans-serif;
+  -moz-margin:0;
+  -moz-padding:0;
+  -moz-overflow-x: hidden; 
+  -moz-color: #505659;
+  -moz-background-color: #fcfce8;
 }
 
 /*///////////////////////////Contenu////////////////////////////////////*/
@@ -14,24 +21,33 @@ h1 {
   font-size: 4em;
   margin: -2% auto 1%;
   color: #2ba0a0; 
+  -moz-font-size: 4em;
+  -moz-margin: -2% auto 1%;
+  -moz-color: #2ba0a0;
 }
 
 .icone {
   width: 1%;
+  -moz-width: 1%;
 }
 
 .icone2 {
   width: 10%;
+  -moz-width: 10%;
 }
 
 h2 {
   font-size: 2em;
   margin-bottom: -0.5%;
+  -moz-font-size: 2em;
+  -moz-margin-bottom: -0.5%;
 }
 
 p {
   font-size: 1.2em;
   width: 80%;
+  -moz-font-size: 1.2em;
+  -moz-width: 80%;
 }
 
 /*///////////////////////////Responsive mobile////////////////////////////////////*/
@@ -42,20 +58,28 @@ h1 {
   font-size: 2.2em;
   margin: -5% auto 1%;
   color: #2ba0a0; 
+  -moz-font-size: 2.2em;
+  -moz-margin: -5% auto 1%;
+  -moz-color: #2ba0a0;
 }
 
 .icone {
     width: 6%;
+    -moz-width: 6%;
 }
 
 h2 {
   font-size: 1.4em;
   margin-bottom: -0.5%;
+  -moz-font-size: 1.4em;
+  -moz-margin-bottom: -0.5%;
 }
 
 p {
   font-size: 1.2em;
   width:100%;
+  -moz-font-size: 1.2em;
+  -moz-width:100%;
 }
 
 }

@@ -33,7 +33,6 @@ header {
 }
 
 @mixin hexagone($top,$left){
-	width:90%;
 	margin-top:$top;
 	margin-left:$left;
 
@@ -42,8 +41,8 @@ header {
 /*/////////////////////////////////Hexagone 1///////////////////////////////*/
 
 #hexa1 {
-	@include hexagone(63%,65%);
-	
+	@include hexagone(43%,48%);
+	width:68%;
 }
 
 /*//////////Animation///////////////////*/
@@ -69,7 +68,8 @@ header {
 /*/////////////////////////////////Hexagone 2///////////////////////////////*/
 
 #hexa2 {
-	@include hexagone(24%,35%);
+	@include hexagone(17%,0%);
+	width: 100%;
 }
 
 /*//////////Animation///////////////////*/
@@ -96,7 +96,8 @@ header {
 /*/////////////////////////////////Hexagone 3///////////////////////////////*/
 
 #hexa3 {
-	@include hexagone(63%,5%);
+	@include hexagone(62%,-23%);
+	width:100%;
 }
 
 /*//////////Animation///////////////////*/
@@ -119,7 +120,8 @@ header {
 /*/////////////////////////////////Hexagone 4///////////////////////////////*/
 
 #hexa4 {
-	@include hexagone(24%,-25%);
+	@include hexagone(18%,-46%);
+	width:99%;
 }
 
 /*//////////Animation///////////////////*/
@@ -143,7 +145,8 @@ header {
 /*/////////////////////////////////Hexagone 5///////////////////////////////*/
 
 #hexa5 {
-	@include hexagone(63%,-55%);
+	@include hexagone(62%,-70%);
+	width:100%;
 }
 
 /*//////////Animation///////////////////*/
@@ -205,5 +208,54 @@ header {
 	#hexa5 {
 		@include hexagone(-11%,16%);
 	}
+
+}
+///////////////////////////Tablette/////////////////////////
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+	#hexa1 {
+		@include hexagone(63%,26%);
+		width:100%;
+	}
+	#hexa2 {
+		@include hexagone(17%,5%);
+		width: 100%;
+	}
+	#hexa3 {
+		@include hexagone(62%,-16%);
+		width:100%;
+	}
+	#hexa4 {
+		@include hexagone(18%,-36%);
+		width:99%;
+	}
+	#hexa5 {
+		@include hexagone(62%,-56%);
+		width:100%;
+	}
+
+}
+///////////////////////////Ordi/////////////////////////
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+	#hexa1 {
+		@include hexagone(55%,36%);
+		width:85%;
+	}
+
+}
+@media screen and (min-width: 1920px) {
+	#hexa1 {
+		@include hexagone(28%,63%);
+		width:47%;
+	}
+
 }
 
+@media screen and (min-width: 1680px) and (max-width: 1919px) {
+	#hexa1 {
+		@include hexagone(32%,59%);
+		width:53%;
+	}
+
+}

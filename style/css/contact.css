@@ -6,46 +6,75 @@ body {
   padding: 0;
   overflow-x: hidden;
   color: #505659;
-  background-color: #fcfce8; }
+  background-color: #fcfce8;
+  -moz-width: 90%;
+  -moz-font-family: 'mosk_normal_400regular', sans-serif;
+  -moz-margin: 0;
+  -moz-padding: 0;
+  -moz-overflow-x: hidden;
+  -moz-color: #505659;
+  -moz-background-color: #fcfce8; }
 
 /*///////////////////////////Contenu////////////////////////////////////*/
 h1 {
   font-size: 4em;
   margin: -2% auto 1%;
-  color: #2ba0a0; }
+  color: #2ba0a0;
+  -moz-font-size: 4em;
+  -moz-margin: -2% auto 1%;
+  -moz-color: #2ba0a0; }
 
 .icone {
-  width: 1%; }
+  width: 1%;
+  -moz-width: 1%; }
 
 .icone2 {
-  width: 10%; }
+  width: 10%;
+  -moz-width: 10%; }
 
 h2 {
   font-size: 2em;
-  margin-bottom: -0.5%; }
+  margin-bottom: -0.5%;
+  -moz-font-size: 2em;
+  -moz-margin-bottom: -0.5%; }
 
 p {
   font-size: 1.2em;
-  width: 80%; }
+  width: 80%;
+  -moz-font-size: 1.2em;
+  -moz-width: 80%; }
 
 /*///////////////////////////Responsive mobile////////////////////////////////////*/
 @media screen and (max-width: 480px) {
   h1 {
     font-size: 2.2em;
     margin: -5% auto 1%;
-    color: #2ba0a0; }
+    color: #2ba0a0;
+    -moz-font-size: 2.2em;
+    -moz-margin: -5% auto 1%;
+    -moz-color: #2ba0a0; }
 
   .icone {
-    width: 6%; }
+    width: 6%;
+    -moz-width: 6%; }
 
   h2 {
     font-size: 1.4em;
-    margin-bottom: -0.5%; }
+    margin-bottom: -0.5%;
+    -moz-font-size: 1.4em;
+    -moz-margin-bottom: -0.5%; }
 
   p {
     font-size: 1.2em;
-    width: 100%; } }
+    width: 100%;
+    -moz-font-size: 1.2em;
+    -moz-width: 100%; } }
 @font-face {
+  -moz-font-family: 'mosk_normal_400regular';
+  -moz-src: url("../mosk_normal_400-webfont.eot");
+  -moz-src: url("../mosk_normal_400-webfont.eot?#iefix") format("embedded-opentype"), url("../mosk_normal_400-webfont.woff2") format("woff2"), url("../mosk_normal_400-webfont.woff") format("woff"), url("../mosk_normal_400-webfont.ttf") format("truetype"), url("../mosk_normal_400-webfont.svg#mosk_normal_400regular") format("svg");
+  -moz-font-weight: normal;
+  -moz-font-style: normal;
   font-family: 'mosk_normal_400regular';
   src: url("../mosk_normal_400-webfont.eot");
   src: url("../mosk_normal_400-webfont.eot?#iefix") format("embedded-opentype"), url("../mosk_normal_400-webfont.woff2") format("woff2"), url("../mosk_normal_400-webfont.woff") format("woff"), url("../mosk_normal_400-webfont.ttf") format("truetype"), url("../mosk_normal_400-webfont.svg#mosk_normal_400regular") format("svg");
@@ -54,8 +83,11 @@ p {
 /*///////////////////////////Menu////////////////////////////////////*/
 nav .navigation {
   width: 100%;
+  -moz-width: 50%;
   height: 100%;
+  -moz-height: 50%;
   position: fixed;
+  -moz-position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
@@ -64,11 +96,21 @@ nav .navigation {
   margin: 0;
   padding: 0;
   list-style: none;
-  background: #2ba0a0; }
+  background: #2ba0a0;
+  -moz-top: 0;
+  -moz-right: 0;
+  -moz-bottom: 0;
+  -moz-left: 0;
+  -moz-z-index: 0;
+  -moz-margin: 0;
+  -moz-padding: 0;
+  -moz-list-style: none;
+  -moz-background: #2ba0a0; }
 
 /*////////////Navigation Menu - List items////////////*/
 .nav-item {
-  width: 200px; }
+  width: 200px;
+  -moz-width: 200px; }
 
 .nav-item a {
   display: block;
@@ -76,26 +118,41 @@ nav .navigation {
   color: #fbf6df;
   font-size: 1.2em;
   font-weight: 600;
-  text-decoration: none; }
+  text-decoration: none;
+  -moz-display: block;
+  -moz-padding: 1em;
+  -moz-color: #fbf6df;
+  -moz-font-size: 1.2em;
+  -moz-font-weight: 600;
+  -moz-text-decoration: none; }
 
 .nav-item a:hover {
   color: #505659; }
 
 .contenu {
   min-height: 100%;
+  -moz-min-height: 100%;
   background-color: #fcfce8;
   position: relative;
   top: 0;
   bottom: 100%;
   left: 0;
   z-index: 1;
-  padding: 4em; }
+  padding: 4em;
+  -moz-position: relative;
+  -moz-top: 0;
+  -moz-bottom: 100%;
+  -moz-left: 0;
+  -moz-z-index: 1;
+  -moz-padding: 4em; }
 
 /* Nav Trigger */
 .nav-trigger {
   /* critical styles - hide the checkbox input */
   position: absolute;
-  clip: rect(0, 0, 0, 0); }
+  clip: rect(0, 0, 0, 0);
+  -moz-position: absolute;
+  -moz-clip: rect(0, 0, 0, 0); }
 
 label[for="nav-trigger"] {
   /* critical positioning styles */
@@ -106,18 +163,29 @@ label[for="nav-trigger"] {
   height: 30px;
   width: 30px;
   cursor: pointer;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6' fill='#2ba0a0'/><rect y='24' width='30' height='6' fill='#2ba0a0'/><rect y='12' width='30' height='6' fill='#2ba0a0'/></svg>");
-  background-size: contain; }
+  background-image: url("../../image/menu.svg");
+  background-size: cover;
+  -moz-position: fixed;
+  -moz-left: 15px;
+  top: 15px;
+  -moz-z-index: 2;
+  -moz-height: 30px;
+  -moz-width: 30px;
+  -moz-cursor: pointer;
+  -moz-background-size: contain; }
 
 /* Make the Magic Happen */
 .nav-trigger + label, .contenu {
-  transition: left 0.2s; }
+  transition: left 0.2s;
+  -moz-transition: left 0.2s; }
 
 .nav-trigger:checked + label {
-  left: 215px; }
+  left: 215px;
+  -moz-left: 215px; }
 
 .nav-trigger:checked ~ .contenu {
-  left: 200px; }
+  left: 200px;
+  -moz-left: 200px; }
 
 /*///////////////////////////Page contact////////////////////////////////////*/
 body {

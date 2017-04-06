@@ -4,8 +4,11 @@ $postion_default:0;
 
 nav .navigation {
   width: 100%;
+  -moz-width: 50%;
   height: 100%;
+  -moz-height: 50%;
   position: fixed;
+  -moz-position: fixed;
   top: $postion_default;
   right: $postion_default;
   bottom: $postion_default;
@@ -15,12 +18,22 @@ nav .navigation {
   padding: $postion_default;
   list-style: none;
   background: #2ba0a0;
+  -moz-top: $postion_default;
+  -moz-right: $postion_default;
+  -moz-bottom: $postion_default;
+  -moz-left: $postion_default;
+  -moz-z-index: $postion_default;
+  -moz-margin: $postion_default;
+  -moz-padding: $postion_default;
+  -moz-list-style: none;
+  -moz-background: #2ba0a0;
 }
 
 /*////////////Navigation Menu - List items////////////*/
 
 .nav-item {
   width: 200px;
+  -moz-width: 200px;
 }
 
 .nav-item a {
@@ -30,6 +43,12 @@ nav .navigation {
   font-size: 1.2em;
   font-weight: 600;
   text-decoration: none;
+  -moz-display: block;
+  -moz-padding: 1em;
+  -moz-color: #fbf6df;
+  -moz-font-size: 1.2em;
+  -moz-font-weight: 600;
+  -moz-text-decoration: none;
 }
 
 .nav-item a:hover {
@@ -38,6 +57,7 @@ nav .navigation {
 
 .contenu {
   min-height: 100%;
+  -moz-min-height: 100%;
   background-color: #fcfce8; 
   position: relative;
   top: $postion_default;
@@ -45,6 +65,12 @@ nav .navigation {
   left: $postion_default;
   z-index: 1;
   padding: 4em;
+  -moz-position: relative;
+  -moz-top: $postion_default;
+  -moz-bottom: 100%;
+  -moz-left: $postion_default;
+  -moz-z-index: 1;
+  -moz-padding: 4em;
   
 }
 
@@ -53,6 +79,8 @@ nav .navigation {
   /* critical styles - hide the checkbox input */
   position: absolute;
   clip: rect(0, 0, 0, 0);
+  -moz-position: absolute;
+  -moz-clip: rect(0, 0, 0, 0);
 }
 
 label[for="nav-trigger"] {
@@ -63,20 +91,30 @@ label[for="nav-trigger"] {
   height: 30px;
   width: 30px;
   cursor: pointer;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6' fill='#2ba0a0'/><rect y='24' width='30' height='6' fill='#2ba0a0'/><rect y='12' width='30' height='6' fill='#2ba0a0'/></svg>");
-  background-size: contain;
+  background-image: url("../../image/menu.svg");
+  background-size: cover;
+  -moz-position: fixed;
+  -moz-left: 15px; top: 15px;
+  -moz-z-index: 2;
+  -moz-height: 30px;
+  -moz-width: 30px;
+  -moz-cursor: pointer;
+  -moz-background-size: contain;
 }
 
 /* Make the Magic Happen */
 .nav-trigger + label, .contenu {
   transition: left 0.2s;
+  -moz-transition: left 0.2s;
 }
 
 .nav-trigger:checked + label {
   left: 215px;
+  -moz-left: 215px;
 }
 
 .nav-trigger:checked ~ .contenu {
   left: 200px;
+  -moz-left: 200px;
 }
 
